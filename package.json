@@ -1,0 +1,27 @@
+{
+  "name": "hash-s3-6-ctf",
+  "version": "1.0.0",
+  "description": "Multi-stage AI-resistant CTF puzzle with fragment assembly and VM ordering",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server-simple.js",
+    "start-complex": "node server.js",
+    "dev": "nodemon server-simple.js",
+    "test": "node test-client.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [
+    "ctf",
+    "puzzle",
+    "security",
+    "crypto",
+    "vm"
+  ],
+  "author": "CTF Designer",
+  "license": "MIT"
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secure Operations Center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scanlines"></div>
+    <div class="matrix-bg"></div>
+    
+    <main class="layout">
+      <header class="site-header">
+        <div class="security-badge">
+          <span class="badge-text">CLASSIFIED</span>
+          <span class="badge-level">LEVEL 7</span>
+        </div>
+        <h1 class="glitch" data-text="SECURE OPS">SECURE OPS</h1>
+        <p class="subtitle">classified mission control interface</p>
+        <div class="access-level">
+          <span class="access-indicator"></span>
+          <span>GUEST ACCESS - LIMITED</span>
+        </div>
+      </header>
+
+      <section class="visuals">
+        <div class="security-panel">
+          <div class="panel-header">
+            <h3>SYSTEM STATUS</h3>
+            <div class="status-indicator active"></div>
+          </div>
+          <div class="status-grid">
+            <div class="status-item">
+              <div class="status-label">ENCRYPTION</div>
+              <div class="status-value secure">AES-256 ACTIVE</div>
+            </div>
+            <div class="status-item">
+              <div class="status-label">FIREWALL</div>
+              <div class="status-value secure">PROTECTED</div>
+            </div>
+            <div class="status-item">
+              <div class="status-label">INTRUSION</div>
+              <div class="status-value warning">MONITORING</div>
+            </div>
+            <div class="status-item">
+              <div class="status-label">THREAT LEVEL</div>
+              <div class="status-value danger">ELEVATED</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mission-board">
+          <div class="board-header">
+            <h3>ACTIVE MISSIONS</h3>
+            <div class="mission-count">3 CLASSIFIED</div>
+          </div>
+          <div class="mission-list">
+            <div class="mission-item">
+              <span class="mission-id">OP-001</span>
+              <span class="mission-status completed">COMPLETED</span>
+            </div>
+            <div class="mission-item">
+              <span class="mission-id">OP-002</span>
+              <span class="mission-status active">IN PROGRESS</span>
+            </div>
+            <div class="mission-item">
+              <span class="mission-id">OP-003</span>
+              <span class="mission-status pending">PENDING</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="terminal" aria-label="secure terminal">
+        <div class="terminal-header">
+          <div class="terminal-title">SECURE COMMAND INTERFACE</div>
+          <div class="terminal-security">
+            <span class="security-level">GUEST</span>
+            <div class="connection-indicator"></div>
+          </div>
+        </div>
+        <div id="terminal-output" class="terminal-output" role="log" aria-live="polite"></div>
+        <div class="terminal-input">
+          <span class="prompt">guest@secure-ops:~$</span>
+          <input id="terminal-input" type="text" autocomplete="off" spellcheck="false" aria-label="terminal input" />
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="footer-security">
+          <span>⚠️ CLASSIFIED SYSTEM - UNAUTHORIZED ACCESS PROHIBITED</span>
+        </div>
+        <div class="footer-help">
+          <span>type <strong>help</strong> for available commands</span>
+        </div>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
